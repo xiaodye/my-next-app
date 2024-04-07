@@ -8,9 +8,8 @@
   // 参考：https://dev.to/tiu/how-to-get-tailwind-intellisense-anywhere-53ej
   // Github: https://github.com/paolotiu/tailwind-intellisense-regex-list
   "tailwindCSS.experimental.classRegex": [
-    ["clsx\\(([^)]*)\\)", "\"([^\"]*)\""], // clsx
-    // ["cn\\(([^)]*)\\)", "(?:'|\"|`)([^']*)(?:'|\"|`)"], // cn
-    ["cn\\(([^)]*)\\)", "\"([^\"]*)\""], // cn
+    ["clsx\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"], // clsx
+    ["cn\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"], // cn
     ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"], // cva
     ["(?:twMerge|twJoin)\\(([^;]*)[\\);]", "[`'\"`]([^'\"`;]*)[`'\"`]"] // twMerge
   ],
